@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -1550,7 +1550,6 @@
     <ClInclude Include="MalariaDrugTypeParameters.h" />
     <ClInclude Include="MultiInterventionEventCoordinator.h" />
     <ClInclude Include="MultiRouteTransmissionGroups.h" />
-    <ClInclude Include="PolioDefs.h" />
     <ClInclude Include="PropertyReport.h" />
     <ClInclude Include="SimpleTransmissionGroups.h" />
     <ClInclude Include="TransmissionGroupMembership.h" />
@@ -1916,12 +1915,6 @@
     </ClInclude>
     <ClInclude Include="..\baseReportLib\IReport.h">
       <Filter>Source Files\Reporting</Filter>
-    </ClInclude>
-    <ClInclude Include="NodeTBHIV.h">
-      <Filter>Source Files\TBHIV</Filter>
-    </ClInclude>
-    <ClInclude Include="SimulationTBHIV.h">
-      <Filter>Source Files\TBHIV</Filter>
     </ClInclude>
     <ClInclude Include="CalendarEventCoordinator.h">
       <Filter>Source Files\Campaign\EventCoordinator</Filter>

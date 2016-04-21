@@ -95,7 +95,10 @@ namespace Kernel
                     PyErr_Print();
                     std::stringstream msg;
                     msg << "Embedded python code failed: PyObject_CallObject failed in call to 'destroy'.";
+#pragma warning( push )
+#pragma warning( disable: 4297 )
                     throw Kernel::IllegalOperationException( __FILE__, __LINE__, __FUNCTION__, msg.str().c_str() );
+#pragma warning( pop )
                 }
             }
         }

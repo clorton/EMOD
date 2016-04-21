@@ -14,7 +14,8 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by-nc
 
 namespace Kernel
 {
-
+#pragma warning( push )
+#pragma warning( disable: 4251 )
     class IDMAPI InterpolatedValueMap : public JsonConfigurable, public JsonConfigurable::tFloatFloatMapConfigType /* really just a map */
     {
         IMPLEMENT_DEFAULT_REFERENCE_COUNTING()
@@ -28,4 +29,5 @@ namespace Kernel
 
             static void serialize( IArchive& ar, InterpolatedValueMap& map );
     };
+#pragma warning( pop )
 }
